@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hallo Stina</title>
+<style>
+  html, body { height: 100%; margin: 0; }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fffdf7;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    overflow-x: hidden;
+  }
+  h1 {
+    margin: 0;
+    padding: 0 16px;
+    text-align: center;
+    font-family: "Arial Rounded MT Bold", "Chalkboard SE", "Comic Sans MS", system-ui, sans-serif;
+    font-size: clamp(3rem, 16vw, 10rem);
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+  }
+  h1 span { display: inline-block; text-shadow: 3px 3px 0 rgba(0,0,0,.12); }
+  .gap { display: block; height: 0; }
+  @media (min-width: 700px) { .gap { display: inline; margin: 0 .25em; } }
+</style>
+</head>
+<body>
+<h1 aria-label="Hallo Stina">
+  <span style="color:#e63946">H</span><span style="color:#f77f00">a</span><span style="color:#fcbf49">l</span><span style="color:#2a9d8f">l</span><span style="color:#1d9bf0">o</span>
+  <span class="gap"></span>
+  <span style="color:#8e44ad">S</span><span style="color:#e63946">t</span><span style="color:#f77f00">i</span><span style="color:#2a9d8f">n</span><span style="color:#1d9bf0">a</span>
+</h1>
+</body>
+</html>
